@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "requestId": "req-efffa1f508994c949dc07c67611c4b22",
+  "createdAt": "2026-10-01T16:15:15.530Z",
+  "payload": {
+    "algorithm": "RSA-OAEP-SHA256+A256GCM",
+    "key": "mP3qgrhzlNSfe07m50b+mBeOsJTFBQcZdwWyU9/5Ej5vRD1Bl0wH+yMq33an+wc4mgdXorKpki5FP3jOHFD/Euo7KjuFNszISAEhHuWYmDMZZkUlPt1nPmCwNfCjm9oVg5t3tx2SDNQjc1AhqujBfIri3FFDdQrTUXjGTuvhjWiQ5L6iZIeemARtyK+mc1Yxt0qTLtAKTsaNN0eHbPh8Q93RbssxPqZ1Nh5dZ0HBveAv1WBYUq+uATjdLM1DyZ8DtkT8FShRUfUuCqXeWHAHrWQFXEMpGE6/8XISPnmsGbSLD6fb6Lzj/cuIpMGKbXbbv0YAM3tJENpo6AbRPx4Oww==",
+    "iv": "8vQQUT5i8JZiLZxk",
+    "tag": "+eZZ5yD7FQpxW1KSbKpQLw==",
+    "ciphertext": "vsXjH71EQ67h4t8DNG5OhFP/Tv5dIhcuufnzS1a6x/JvBZz/nFiVlCue/DN3Af4lIFEQDtSCRUSQCw+u4cvFGqqDig7E+ekZNE9LBwAkVHEsrF0YlVpEz/uPL4kcACnKj9uUi3oAjDWN/42isuYFyMFN/B2VdNB5tFDuKlGHjRhP8ctIEgIvh+OtnweAbt9Ko1biPLzI4vTQRmWh27J2GFLUM6+jbkGKEbVsZatp5m7QaqxXQvA3JBOw9Xndb8MIFkS5ZiINV9nm2Snfn/vjjFm1U5GeSqgnmLcpMbEsos583gL80UDui+LBBm5/roT0vY97Ltf3bkkpmx6ywOgnHeYKLIzGVefmh9rAtv87XQ6zK/z6FPmqiNhBNrnwiIBA/3XYZ/VY8gDEyAFxdQBpvB1hWf4H5lasV45nRSQoIUe11EgQtQ=="
+  }
+}

@@ -2,10 +2,13 @@
   "version": 1,
   "requestId": "req-4e2a00a163e3421688a3d45f836636cb",
   "deviceId": "Digihive021",
-  "createdAt": "2026-10-01T15:32:34.763902Z",
-  "expiresAt": "2026-10-01T15:37:34.763902Z",
+  "createdAt": "2026-10-01T15:31:21.749087Z",
+  "expiresAt": "2026-10-01T15:36:21.749087Z",
   "payload": {
     "algorithm": "RSA-OAEP-SHA256+A256GCM",
-    "key": "PLACEHOLDER"
+    "key": "HpeTRpOkfOHg6we5hVYFsKdD51wVaaov7b9vKUuXs+UbyDmCjNic6Fwvt7iItGF7KQrLrTRxGHE+eKQT2p9ZqYhacAggGq8QB0RL1abRVD+wR2XJyN8nf+teTwkoVsb9vjl9Js/HvRh0NpKy7nI5dGsJ8c5EtA8Bju9tOwGDMpLy8f2YzYhVv8uaX4yOHk/WA5v2UGln4y8DhJKoPD2NB9A93zY08BQ3d3/mk0vsyc/63knrWF/7rcK4/DfOdD2mRJyJpojk0lIKupJ0P5aRd9n3SEUw9fvG8dZGYfeyBkkhK1auORG5Xp47fN/SZ4Yt1P1Bs9IPX+s1Js5BA6gXlkJhwtusbvq8NbM4JL6uEZpxLmf71VGXRKj5XUzGE+BXcZT/5Ov8b9M+s9rkpTzX9hGpQULr1aIqVbaX2rct+m9BKqrc/lzkRr6OJHpWenaKJnP+keiXvuSxKx06vxz/7WNdaRq1ocLukorYSaGhJQfg99pSBYD+hLDFcFSrxORi",
+    "iv": "8/ktTQ8BDXTdj/yZ",
+    "tag": "nlWxZhiIUocg9hJwlYOLew==",
+    "ciphertext": "wwSawDiN6qbQ0DuRedEodLMMwq5ROIlXAzl0k3CTFyPzPHMPraU/Duyri3bOCmoRH6s3NALeNGTMYmhSrs5CZAtxTBZi6FoE+QBJdAcw4OIt7voLPW9fwdZWpeSHbc54X20zLl9yVTZC9RoVTxke40bflpMttd96WUt9x7Wqlruq8G4hzwB1f54FOKe+GR48qqLOaGowjoHARx+6/ji1xVCbLS6kwJ4150YDg0Je6ukBkcFiMIYB1nAvZ+MG+UTT5Odq+9z3KMvwmzfGtkZDkfrHI82N5QRBGbjxqaHsWBC0P/HNg0XgQznvYp9Rndcte6yHfjhvdgBXJIAjJ15Q1tIcFgCs4r5ANGdwkPjldQ0qJtIWdSo+OwW768kmHukRAigxG8yCK2ZhA7voVYUq/Wyf2CKw6Wm89MbUVibv5crU9vfEx7OQLrlT6esR7LmG+pdDODiy/ZrvgSf/L11gz3xu3iA6byVsBFZJXBxP4f97lnlAe5doiLym/JY1v9RAna5VvOosngXXR9OmgG41wexJWMm+BybC/gxOouO6ksgWEQKV6O1CR1avMyvj1TG31mYYhkSiBWMhEvq4+ADGx7Rjh3NcH0KIp+PXRM4U+QyUa2WWAX0UBq+ydgO/uJzIK4nHY4HlmBRFMvnDAL4GJHoPge/Rs9puhbHxq7o/ez8G+H1e7S5Od2/l+T19ZGWcLFhpBVmUNqpvgtwzOlv2t7g/POYqrT7LAj2RkCUCkt9JJV+MabiExVxCX+nGB5TUFGn6y4J/Rk4ZHQEpYNC5u2cwmbr0Jm/1Ilq2mdsOxscNpA=="
   }
 }

@@ -12,17 +12,17 @@ bpy.context.view_layer.update(); bpy.ops.object.transform_apply(location=True,ro
 for p in human.data.polygons: p.use_smooth=True
 sub=human.modifiers.new("Surface refinement","SUBSURF"); sub.levels=1; sub.render_levels=1
 mat=bpy.data.materials.new("Neutral cool sculpt"); mat.use_nodes=True
-bs=mat.node_tree.nodes["Principled BSDF"]; bs.inputs["Base Color"].default_value=(0.31,0.30,0.30,1); bs.inputs["Roughness"].default_value=.55
+bs=mat.node_tree.nodes["Principled BSDF"]; bs.inputs["Base Color"].default_value=(0.15,0.14,0.14,1); bs.inputs["Roughness"].default_value=.55
 human.data.materials.append(mat)
 bpy.ops.mesh.primitive_cylinder_add(vertices=96,radius=.72,depth=.08,location=(0,0,-.04))
 ped=bpy.context.object; ped.name="Pedestal"; pm=bpy.data.materials.new("Pedestal"); pm.use_nodes=True
 pbs=pm.node_tree.nodes["Principled BSDF"]; pbs.inputs["Base Color"].default_value=(.05,.055,.065,1); pbs.inputs["Roughness"].default_value=.70; ped.data.materials.append(pm)
-bpy.ops.object.camera_add(location=(2.70,-4.95,2.18)); cam=bpy.context.object; cam.name="Camera"; cam.data.lens=74; bpy.context.scene.camera=cam
+bpy.ops.object.camera_add(location=(2.00,-3.75,1.95)); cam=bpy.context.object; cam.name="Camera"; cam.data.lens=68; bpy.context.scene.camera=cam
 cam.rotation_euler=(Vector((0,0,1.00))-cam.location).to_track_quat('-Z','Y').to_euler()
-for loc,energy,size,color in [((-2.4,-3.0,3.5),900,2.7,(1.0,.90,.82)),((2.4,-1.5,2.7),600,2.2,(.75,.84,1.0)),((0,2.6,3.6),850,2.7,(1.0,.96,.90))]:
+for loc,energy,size,color in [((-2.4,-3.0,3.5),230,2.7,(1.0,.90,.82)),((2.4,-1.5,2.7),150,2.2,(.75,.84,1.0)),((0,2.6,3.6),260,2.7,(1.0,.96,.90))]:
  bpy.ops.object.light_add(type='AREA',location=loc); L=bpy.context.object; L.data.energy=energy; L.data.shape='DISK'; L.data.size=size; L.data.color=color; L.rotation_euler=(Vector((0,0,1.05))-L.location).to_track_quat('-Z','Y').to_euler()
-bpy.ops.object.light_add(type='AREA',location=(0,-.9,.3)); fill=bpy.context.object; fill.data.energy=170; fill.data.size=1.0; fill.rotation_euler=(Vector((0,0,1.0))-fill.location).to_track_quat('-Z','Y').to_euler()
+bpy.ops.object.light_add(type='AREA',location=(0,-.9,.3)); fill=bpy.context.object; fill.data.energy=55; fill.data.size=1.0; fill.rotation_euler=(Vector((0,0,1.0))-fill.location).to_track_quat('-Z','Y').to_euler()
 S=bpy.context.scene; S.render.engine='CYCLES'; S.cycles.device='CPU'; S.cycles.samples=28; S.cycles.use_denoising=True
 S.render.resolution_x=720; S.render.resolution_y=900; S.render.resolution_percentage=100; S.render.image_settings.file_format='PNG'
-S.world.color=(.025,.028,.034); S.view_settings.look='AgX - Medium High Contrast'; S.render.filepath=OP
+S.world.color=(.025,.028,.034); S.view_settings.look='AgX - Medium High Contrast'; S.view_settings.exposure=-0.5; S.render.filepath=OP
 bpy.ops.wm.save_as_mainfile(filepath=OB); bpy.ops.render.render(write_still=True); print("BRIDGE_REALISTIC_DONE")
